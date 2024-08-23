@@ -62,3 +62,32 @@ INSERT INTO Subjects VALUES(180, "Mathematics I", 60), (612, "Software Engineeri
 
 --Insert data to Course_Subjects--
 INSERT INTO Course_Subjects VALUES
+
+
+--Data query language --
+SELECT * FROM Courses;
+
+SELECT c_code, c_name FROM Courses;
+--n (c_code, c_name) (Courses)
+
+SELECT * FROM Courses WHERE c_code = 2;
+--n * (o (c_code = 2) (Courses))
+
+SELECT * FROM Courses WHERE c_name = "BCA";
+
+SELECT * FROM Courses WHERE c_fee < 1000000;
+
+SELECT * FROM Courses WHERE c_fee < 100000 AND c_duration;
+
+SELECT * FROM Students WHERE name LIKE 'a%';
+
+SELECT * FROM Students ORDER BY name DESC;
+
+SELECT COUNT (name) FROM Students;
+--g COUNT (name) (students)
+
+SELECT AVG(c_fee) FROM Courses;
+
+SELECT MIN(c_fee) FROM Courses;
+
+SELECT * FROM Courses WHERE c_fee BETWEEN 100000 AND 10000000; 
